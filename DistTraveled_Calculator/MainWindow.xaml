@@ -5,8 +5,42 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DistTraveled_Calculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="ShapesDistCalc" Height="378.817" Width="800"
+        Icon="./Resources/Icon/points.png">
+    <Grid Margin="0,0,2,0" Height="361" VerticalAlignment="Top">
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_Fichier">
+                    <MenuItem Header="_Exit" Click="MenuItem_Click" />
+                </MenuItem>
+                <MenuItem Header="_Edition">
+                    <MenuItem Command="ApplicationCommands.Cut">
+                        <MenuItem.Icon>
+                            <Image Source="./Resources/Icon/cut.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Command="ApplicationCommands.Copy">
+                        <MenuItem.Icon>
+                            <Image Source="./Resources/Icon/copy.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Command="ApplicationCommands.Paste">
+                        <MenuItem.Icon>
+                            <Image Source="./Resources/Icon/paste.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Name="MenuAbout" Header="_A propos" Click="MenuAbout_Click" />
+            </Menu>
+        </DockPanel>
+        <Label Content="Entrée (ex. : shapes-withoutDist.txt) :" HorizontalAlignment="Left" Margin="25,42,0,0" VerticalAlignment="Top" Width="203"/>
+        <TextBox Name="txtFileStops" HorizontalAlignment="Left" Height="26" Margin="228,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="395"/>
+        <Button Name="btnOpenFile" Click="btnOpenFile_Click" Margin="628,42,45,293">Parcourir</Button>
+        <Label Content="Sortie (ex. : shapes.txt) :" HorizontalAlignment="Left" Margin="25,92,0,0" VerticalAlignment="Top" Width="203"/>
+        <TextBox x:Name="txtFileTransfers" HorizontalAlignment="Left" Height="26" Margin="228,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="395"/>
+        <Button x:Name="btnOpenFileTransfers" Click="btnOpenFileTransfers_Click" Margin="628,92,45,243" Content="Parcourir"/>
+        <Button Name="btnConvert" Content="Convertir" HorizontalAlignment="Left" Margin="182,193,0,0" VerticalAlignment="Top" Width="198" Height="60" Click="BtnConvert_Click" IsEnabled="False"/>
+        <Button x:Name="btnCancel" Content="Annuler" HorizontalAlignment="Left" Margin="414,193,0,0" VerticalAlignment="Top" Width="198" Height="60" IsEnabled="False" Click="BtnCancel_Click"/>
+        <ProgressBar Name="progressBarConvert"  HorizontalAlignment="Left" Height="46" Margin="106,283,0,0" VerticalAlignment="Top" Width="580" Maximum="100" IsEnabled="False"/>
     </Grid>
 </Window>

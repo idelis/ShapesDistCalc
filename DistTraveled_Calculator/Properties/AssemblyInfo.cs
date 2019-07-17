@@ -7,19 +7,19 @@ using System.Windows;
 // Les informations générales relatives à un assembly dépendent de
 // l'ensemble d'attributs suivant. Changez les valeurs de ces attributs pour modifier les informations
 // associées à un assembly.
-[assembly: AssemblyTitle("DistTraveled_Calculator")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("ShapesDistCalc")]
+[assembly: AssemblyDescription("Calcul la distance entre les points d'un fichier shapes.txt")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("DistTraveled_Calculator")]
-[assembly: AssemblyCopyright("Copyright ©  2019")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCompany("IDELIS")]
+[assembly: AssemblyProduct("ShapesDistCalc")]
+[assembly: AssemblyCopyright("IDELIS Copyright ©  2019")]
+[assembly: AssemblyTrademark("IDELIS")]
 [assembly: AssemblyCulture("")]
 
 // L'affectation de la valeur false à ComVisible rend les types invisibles dans cet assembly
 // aux composants COM. Si vous devez accéder à un type dans cet assembly à partir de
 // COM, affectez la valeur true à l'attribut ComVisible sur ce type.
-[assembly: ComVisible(false)]
+[assembly: ComVisible(true)]
 
 //Pour commencer à générer des applications localisables, définissez
 //<UICulture>CultureUtiliséePourCoder</UICulture> dans votre fichier .csproj
@@ -53,3 +53,5 @@ using System.Windows;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: NeutralResourcesLanguage("fr")]
+
