@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DistTraveled_Calculator"
         mc:Ignorable="d"
-        Title="A propos de StopsToTransfers" Height="289.973" Width="497.995"
+        Title="A propos de ShapesDistCalc" Height="289.973" Width="497.995"
         Icon="./Resources/Icon/points.png">
     <DockPanel IsEnabled="False">
         <TextBlock Name="txtAbout" Height="231" TextWrapping="Wrap" VerticalAlignment="Top" Text="" FontSize="16" Width="465" IsEnabled="False"/>
